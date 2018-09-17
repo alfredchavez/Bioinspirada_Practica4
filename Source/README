@@ -1,0 +1,26 @@
+Computacion Bioinspirada - Practica 4
+--------------------------------------
+
+Esta carpeta contiene 4 scripts en el lenguaje de programacion "R".
+Para poder correrlos puede cargar los scripts en cualquier workspace de "R" y
+llamar a las funciones, pero al ser esto poco interactivo se recomienda
+usar el comando Rscript(linux) o Rscript.exe(windows)
+
+NOTA: Tener instalado los paquetes de R: ggplot2 y reshape2
+
+La ejecucion es la siguiente(en este orden):
+$ Rscript GenerateRandomNumbers.R
+-- Esto creara un archivo randomnumbers.txt con 500 numeros aleatorios
+-- que tienen valores desde 1 a 100, cada numero en cada linea del file.
+
+$ Rscript GenerateAverageData.R
+-- Esto leera el archivo con los numeros random creado previamente con
+-- anterior comando, y hara los calculos para determinar los promedios,
+-- luego guardara los resultados en un archivo data.txt en el formato
+-- definido en los requerimentos, mas un header.
+
+$ Rscript GenerateGraphic.R
+-- Esto leera el archivo con los datos de los promedios obtenido al
+-- ejecutar el comando anterior, luego generara el respectivo grafico y
+-- lo guardara en result.png, al abrir la imagen se recomienda hacer zoom
+-- ya que al contener muchos datos, se creo con un gran tamanho.
